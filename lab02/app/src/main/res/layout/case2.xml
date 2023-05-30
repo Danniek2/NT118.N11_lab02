@@ -1,0 +1,53 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/et_ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tv_nhapten"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tv_nhapten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_ten"
+        android:layout_alignBottom="@+id/et_ten"
+        android:layout_alignParentLeft="true"
+        android:text="Nhập tên:" />
+
+    <Button
+        android:id="@+id/btn_nhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_ten"
+        android:layout_alignRight="@+id/et_ten"
+        android:layout_toRightOf="@+id/tv_nhapten"
+        android:text="Nhập"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tv_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_nhap"
+        android:layout_alignParentLeft="true"
+        android:background="@color/colorPrimary" />
+
+    <ListView
+        android:id="@+id/lv_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_selection"
+        android:layout_alignParentLeft="true"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/teal_200" />
+
+</RelativeLayout>
